@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Paradoxe de Russell</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li>
+						<a href="paradoxe_russell.html">Paradoxe de Russell</a>
+					</li>
+					<li>
+						<a href="paradoxe_penrose.html">Triangle de Penrose</a>
+					</li>
+					<li>
+						<a href="paradoxe_zenon.html">Paradoxes de Zénon</a>
+					</li>
+					<li><a href="a_propos.html">A propos</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Le Paradoxe de Russell</h2>
+			<div>
+				<img
+					src="/assets/Bertrand_Russell.jpg"
+					alt="Illustration de Bertrand Russell"
+				/>
+			</div>
+			<small>
+				<a href="https://en.wikipedia.org/wiki/Bertrand_Russell"
+					>Lien vers la photo</a
+				>
+			</small>
+			<p>
+				Le paradoxe de Russell est l’un des paradoxes les plus célèbres
+				de la théorie des ensembles. Formulé par le logicien et
+				philosophe britannique Bertrand Russell au début du XX<sup
+					>e</sup
+				>
+				siècle, il remet en question les fondements mêmes des
+				mathématiques en révélant une contradiction dans la théorie
+				naïve des ensembles. Le paradoxe s'énonce ainsi :
+			</p>
+			<p>
+				<strong>Énoncé :</strong> Existe-t-il un ensemble qui
+				contiendrait tous les ensembles qui ne se contiennent pas
+				eux-mêmes ?
+			</p>
+
+			<h3>Explication du Paradoxe</h3>
+			<p>
+				Imaginons un ensemble que l'on appelle <em>R</em>, défini comme
+				l’ensemble de tous les ensembles qui ne se contiennent pas
+				eux-mêmes. On peut alors se poser la question suivante :
+				<strong>l’ensemble <em>R</em> se contient-il lui-même ?</strong>
+			</p>
+			<p>
+				Si <em>R</em> se contient lui-même, alors selon sa propre
+				définition, il ne devrait pas se contenir. Cependant, si
+				<em>R</em> ne se contient pas, alors il devrait se contenir, car
+				il satisfait sa propre définition. Dans les deux cas, on aboutit
+				à une contradiction.
+			</p>
+
+			<h3>Notations et Formulation Mathématique</h3>
+			<p>
+				Utilisons la notation mathématique pour exprimer le paradoxe de
+				Russell. Supposons qu’il existe un ensemble <em>R</em> tel que :
+			</p>
+			<p style="font-family: monospace">R = { x | x ∉ x }</p>
+			<p>
+				Cela signifie que <em>R</em> est l’ensemble de tous les
+				ensembles <em>x</em> pour lesquels <em>x</em> ne contient pas
+				<em>x</em>. On se demande alors si <em>R</em> appartient à
+				lui-même, c’est-à-dire si <em>R ∈ R</em>.
+			</p>
+			<ul>
+				<li>
+					Si <em>R ∈ R</em>, alors par définition de <em>R</em>,
+					<em>R</em> ne devrait pas contenir <em>R</em>.
+				</li>
+				<li>
+					Si <em>R ∉ R</em>, alors, toujours par définition,
+					<em>R</em> devrait contenir <em>R</em>.
+				</li>
+			</ul>
+			<p>
+				Dans les deux cas, nous arrivons à une contradiction. Ce
+				paradoxe montre que la théorie naïve des ensembles ne peut pas
+				être cohérente si elle permet de définir de tels ensembles.
+			</p>
+
+			<h3>Conséquences et Résolution</h3>
+			<p>
+				Le paradoxe de Russell a des implications profondes pour les
+				mathématiques et la logique. Il a conduit au développement de
+				nouvelles théories des ensembles qui cherchent à éviter de
+				telles contradictions. Par exemple, la théorie des ensembles de
+				<em>Zermelo-Fraenkel</em> (ZF) avec l’<em
+					>axiome de fondation</em
+				>
+				interdit la formation d'ensembles « autoréférentiels » comme
+				celui de Russell.
+			</p>
+			<p>
+				Dans la théorie ZF, un ensemble ne peut pas contenir une chaîne
+				infinie d'inclusions qui remonteraient jusqu’à lui-même. Ainsi,
+				on élimine la possibilité d’un ensemble qui serait défini comme
+				incluant uniquement les ensembles qui ne se contiennent pas
+				eux-mêmes.
+			</p>
+
+			<h3>Exemples et Applications dans la Logique</h3>
+			<p>
+				Le paradoxe de Russell est similaire à d'autres paradoxes
+				logiques, comme le <em>paradoxe du barbier</em>, qui peut être
+				énoncé ainsi : « Dans un village, le barbier rase tous ceux qui
+				ne se rasent pas eux-mêmes. Qui rase le barbier ? » Cette
+				question mène à une contradiction similaire.
+			</p>
+			<p>
+				En informatique et en logique formelle, le paradoxe de Russell a
+				inspiré le développement des types logiques et des structures
+				hiérarchiques qui empêchent les références circulaires dans les
+				systèmes formels.
+			</p>
+		</main>
+		<footer>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="paradoxe_russell.html">Paradoxe de Russell</a></li>
+				<li><a href="paradoxe_penrose.html">Triangle de Penrose</a></li>
+				<li><a href="paradoxe_zenon.html">Paradoxes de Zénon</a></li>
+				<li><a href="a_propos.html">A propos</a></li>
+			</ul>
+			<p>
+				Créé par <strong>Richard Gajda</strong> le
+				<strong>4 Novembre 2024</strong>
+			</p>
+		</footer>
+	</body>
+</html>

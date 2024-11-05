@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Paradoxes de Zénon</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="/assets/logo.svg" type="image/svg+xml" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li>
+						<a href="paradoxe_russell.html">Paradoxe de Russell</a>
+					</li>
+					<li>
+						<a href="paradoxe_penrose.html">Triangle de Penrose</a>
+					</li>
+					<li>
+						<a href="paradoxe_zenon.html">Paradoxes de Zénon</a>
+					</li>
+					<li><a href="a_propos.html">A propos</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<h2>Les Paradoxes de Zénon</h2>
+			<div>
+				<img
+					src="/assets/zenon.jpg"
+					alt="Illustration de Zénon d'Élée"
+				/>
+			</div>
+			<small>
+				<a href="https://en.wikipedia.org/wiki/Zeno_of_Elea"
+					>Lien vers la photo</a
+				>
+			</small>
+			<p>
+				Les paradoxes de Zénon, proposés par le philosophe grec Zénon
+				d'Élée, sont une série de raisonnements qui défient notre
+				compréhension intuitive du mouvement et de l’infini. Ces
+				paradoxes montrent comment des suppositions sur l'infinité
+				peuvent mener à des conclusions surprenantes, voire
+				contradictoires, sur le mouvement.
+			</p>
+
+			<h3>Paradoxe d’Achille et de la Tortue</h3>
+			<p>
+				Dans ce paradoxe, Achille, un coureur rapide, poursuit une
+				tortue plus lente. Zénon soutient que, même si Achille court
+				plus vite, il ne rattrapera jamais la tortue, car chaque fois
+				qu'il atteint l'endroit où la tortue se trouvait, cette dernière
+				a avancé un peu plus loin. Voici les étapes du raisonnement :
+			</p>
+			<ol>
+				<li>
+					Au départ, la tortue a une avance sur Achille, disons de
+					<em>d</em> mètres.
+				</li>
+				<li>
+					Pour rattraper la tortue, Achille doit d’abord atteindre le
+					point <em>d</em>.
+					<ol type="a">
+						<li>
+							Pendant ce temps, la tortue avance un peu plus,
+							disons de <em>d/2</em> mètres.
+						</li>
+					</ol>
+				</li>
+				<li>
+					Ensuite, Achille doit atteindre le nouveau point de la
+					tortue, <em>d + d/2</em>.
+					<ol type="a">
+						<li>
+							Mais pendant qu’il atteint ce point, la tortue
+							avance encore, cette fois de <em>d/4</em> mètres.
+						</li>
+					</ol>
+				</li>
+				<li>
+					Le processus continue ainsi, chaque segment se divisant en
+					une distance de plus en plus petite :
+					<ol type="a">
+						<li>
+							Distance restante = <em>d</em>, <em>d/2</em>,
+							<em>d/4</em>, <em>d/8</em>, …
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<p>
+				En réalité, en additionnant une série infinie de segments de
+				plus en plus courts, nous obtenons une distance finie. Ce
+				paradoxe utilise donc une
+				<strong>somme infinie convergente</strong> qui, en théorie,
+				permet à Achille de rattraper la tortue.
+			</p>
+
+			<h3>Interprétation et Résolution Moderne</h3>
+			<p>
+				Les paradoxes de Zénon ont suscité des débats jusqu'au
+				développement du calcul infinitésimal. Le calcul permet de
+				traiter les sommes infinies et les limites, fournissant ainsi
+				une explication mathématique pour les paradoxes de Zénon.
+			</p>
+		</main>
+		<footer>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="paradoxe_russell.html">Paradoxe de Russell</a></li>
+				<li><a href="paradoxe_penrose.html">Triangle de Penrose</a></li>
+				<li><a href="paradoxe_zenon.html">Paradoxes de Zénon</a></li>
+				<li><a href="a_propos.html">A propos</a></li>
+			</ul>
+			<p>
+				Créé par <strong>Richard Gajda</strong> le
+				<strong>4 Novembre 2024</strong>
+			</p>
+		</footer>
+	</body>
+</html>
